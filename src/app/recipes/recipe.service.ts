@@ -44,11 +44,11 @@ export class RecipeService {
     const headers = new Headers({
       'Content-Type': 'application/json'
     });
-    return this.http.put('https://recipe-adf25.firebaseio.com/recipes.json', body, {headers: headers});
+    return this.http.put('https://recipebook-8c242.firebaseio.com/recipes.json', body, {headers: headers});
   }
 
   fetchData() {
-    return this.http.get('https://recipe-adf25.firebaseio.com/recipes.json')
+    return this.http.get('https://recipebook-8c242.firebaseio.com/recipes.json')
       .map((response: Response) => response.json())
       .subscribe(
         (data: Recipe[]) => {
