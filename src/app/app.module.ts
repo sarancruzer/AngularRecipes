@@ -7,6 +7,7 @@ import { RecipeBookAppComponent } from "./recipe-book.component";
 import { ShoppingListService } from "./shopping-list/shopping-list.service";
 import { RecipeService } from "./recipes/recipe.service";
 import { routing } from "./app.routing";
+import { RecipesModule } from "./recipes/recipes.module";
 import { ShoppingListModule } from "./shopping-list/shopping-list.module";
 import { CoreModule } from "./core/core.module";
 import { HeaderComponent } from "./header.component";
@@ -22,6 +23,7 @@ import { HomeComponent } from './home.component';
         BrowserModule,
         HttpModule,
         ReactiveFormsModule,
+        RecipesModule,
         ShoppingListModule,
         CoreModule,
         routing
